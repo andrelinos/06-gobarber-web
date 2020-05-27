@@ -11,7 +11,8 @@
     "plugin:prettier/recommended",
     "prettier/flowtype",
     "prettier/react",
-    "prettier/standard"
+    "prettier/standard",
+    "eslint-config-prettier"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -29,14 +30,16 @@
     "react",
     "react-hooks",
     "@typescript-eslint",
-    "prettier"
+    "eslint-config-prettier"
   ],
   "rules": {
+    "prettier/pretiter": "error",
     "react-hooks/rules-of-hooks": "error",
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
     "react-hooks/exhaustive-deps": "warn",
+    "no-unused-expressions": "off",
     "react/jsx-filename-extension": [
       1,
       {
